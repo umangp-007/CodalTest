@@ -1,0 +1,46 @@
+.sort-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  
+  .sort-label {
+    font-size: 14px;
+    font-weight: 600;
+  }
+  
+  .sort-dropdown {
+    padding: 8px 12px;
+    font-size: 14px;
+    border: 1px solid #C5C5C5;
+    color: #333;
+    cursor: pointer;
+    width: 200px;
+    height: 52px;
+    transition: all 0.3s ease;
+  
+    &:hover {
+      border-color: #999;
+    }
+  
+    &:focus {
+      outline: none;
+      border-color: #0056b3;
+    }
+  }
+  
+  .sorted-items {
+    margin-top: 20px;
+  }
+  
+  .sorted-items ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .sorted-items li {
+    font-size: 16px;
+    margin: 5px 0;
+  }
+  

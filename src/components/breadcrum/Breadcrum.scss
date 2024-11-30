@@ -1,0 +1,19 @@
+.breadcrumb-item + .breadcrumb-item::before {
+    content: " > "; /* Replacing / with > */
+    color: #939393; 
+    height: 12px;
+    width: 12px; /* Adjust color to match your breadcrumb text */
+  }
+
+  .breadcrumb-item{
+    font-weight: 400;
+    font-size: 14px;
+     a{
+        color: #707070;
+     }
+  }
+
+  .active_page{
+    color: #222222;
+   
+  }

@@ -1,0 +1,33 @@
+// Side Panel Styles
+.side-panel {
+    position: fixed;
+    top: 0;
+    right: -300px; // Initially hidden on the right
+    width: 300px;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.3);
+    transition: right 0.3s ease-in-out;
+    z-index: 1050; // Ensure the panel is above other content
+  }
+  
+  .side-panel.open {
+    right: 0; // Show the side panel
+  }
+  
+  .side-panel-content {
+    padding: 20px;
+  }
+  
+  #filterButton {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1100; // Above the side panel
+  }
+
+  
+  .panel-content {
+    margin-top: 20px;
+  }
+  

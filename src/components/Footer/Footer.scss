@@ -1,0 +1,146 @@
+.footer {
+  background-color: #000;
+  color: #fff;
+  padding: 48px 48px;
+
+  .newsletter-form {
+    display: flex;
+    align-items: center;
+    margin-bottom: 64px;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+    
+
+    .newsletter-text {
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column;
+
+      .newsletter-head {
+        font-size: 18px;
+        font-weight: 400;
+      }
+      .newsletter-desc {
+        font-size: 16px;
+        font-weight: 400;
+      }
+    }
+    .email {
+      display: flex;
+      gap: 20px;
+      font-size: 14px;
+      font-weight: 400;
+    }
+    input[type="email"] {
+      padding: 10px;
+      border: none;
+      height: 56px;
+      width: 280px;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #ffba00;
+      color: #000;
+      font-size: 16px;
+      font-weight: 600;
+      border: none;
+      cursor: pointer;
+    }
+  }
+
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .footer-column {
+      margin-bottom: 20px;
+
+
+
+
+      .footer-menu-title {
+        font-size: 14px;
+        margin-bottom: 10px;
+        color: #98A2B3;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+          margin-bottom: 5px;
+          a {
+            color: #E4E7EC;
+            text-decoration: none;
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    a {
+      margin: 0 10px;
+      color: #fff;
+      font-size: 24px;
+    }
+  }
+
+  .footer-hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 64px 0px;
+    padding: 0;
+}
+.footer-logo {
+    font-size: 30px;
+}
+
+.clr-copy-text {
+    color: #98A2B3;
+}
+
+  @media (max-width: 768px) {
+    .footer-content {
+      flex-direction: column;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .newsletter-form {
+      flex-direction: column; // Stack items vertically
+      align-items: flex-start; // Align items to the left
+
+      .newsletter-text {
+        margin-bottom: 10px;
+      }
+
+      .email {
+        width: 100%; // Full width for inputs and buttons
+        display: flex;
+        flex-wrap: wrap; // Wrap input and button if needed
+        gap: 10px;
+
+        input[type="email"] {
+          width: 100%; // Full width for smaller screens
+        }
+
+        button {
+          width: 100%; // Full width for better usability
+          text-align: center;
+        }
+      }
+    }
+}
+}
